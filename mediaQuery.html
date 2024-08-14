@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         h1{
+            color:rgb(255, 21, 0);
+        }
+        @media print 
+        {
+            h1{
+                color: rgb(23, 255, 6);
+            }
+        }
+        
+       
+
+div{
+    background-color: blue;
+    height: 40px;
+}
+@media screen and (max-width:800px)
+{
+    div{
+        background-color: darkorange;
+    }
+}
+
+@media screen and (max-width:600px){
+    div{
+        background-color: red;
+    }
+}
+@media screen and (max-width:400px){
+   div{
+    background-color: green;
+
+   }
+}
+
+.minwidth{
+    margin-top: 100px;
+    background-color: yellow;
+}
+@media screen and (min-width:600px){
+    .minwidth{
+    background-color: rgb(255, 0, 0);
+} 
+}
+@media screen and (min-width:800px){
+    .minwidth{
+    background-color: rgb(30, 0, 255);
+} 
+}
+@media screen and (min-width:900px){
+    .minwidth{
+    background-color: rgb(89, 255, 0);
+} 
+}
+
+.laptop{
+    margin-top: 100px;
+    background-color: aqua;
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+    float: left;
+}
+@media screen and (max-width:600px){
+    .laptop{
+float:none ;
+    }
+}
+         
+    </style>
+</head>
+<body>
+    <h1>hello</h1>
+   <div></div>
+ <div class="minwidth"></div>
+  <div class="laptop">
+  </div>
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat enim nobis expedita? Maxime fuga est harum explicabo nulla officia distinctio tempore aut quisquam non odio adipisci, accusantium fugiat, impedit saepe!</p>
+
+</body>
+</html>

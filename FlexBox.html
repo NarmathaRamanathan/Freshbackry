@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+        .container{
+            border: 5px solid black;
+            padding: 30px;
+            margin-top: 50px;
+        }  
+        .box{
+            border: 3px solid red;
+            padding: 20px;
+            margin: 2px;
+            font-weight: bold;
+            display: flex;
+            justify-content:flex-start;
+          
+        }
+        .box:nth-of-type(even){
+            background-color: aqua;
+            
+        }
+        
+        /* flex box
+         flex-direction: row-reverse;
+           flex-direction: column-reverse;
+           align-items: baseline;
+                     justify-content: space-between;
+                    align-content:space-around;
+
+           */
+        .container{
+            display: flex;
+          width: 1000px;
+         flex-wrap: wrap;
+          
+        }
+        
+        
+    /* flex grow
+    
+    .box{
+        flex-grow: 1;
+    }
+    .box:nth-child(1){
+        flex-grow: 2;
+    }
+    .box:nth-child(2){
+        flex-shrink:;
+    } */
+
+
+        /* align self
+       
+        .box:nth-child(5){
+            align-self: flex-end;
+        }
+        */
+
+        /* flex order
+        .box:nth-child(1){
+            order: 5;
+        }
+        .box:nth-child(2){
+            order: 1;
+        }
+        .box:nth-child(3){
+            order: 3;
+        }
+        .box:nth-child(4){
+            order: 4;
+        }
+        .box:nth-child(5){
+            order: 2;
+        }
+         */
+        
+    </style>
+</head>
+<body>
+    <h2>Flex Direction</h2>
+     <div class="container">
+        <div class="box">
+            <p>1</p>
+        </div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+   
+     </div>
+</body>
+</html>

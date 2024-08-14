@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background-color: rgb(88, 85, 85);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border-radius: 2px;
+    box-shadow: 0 2px 10px rgba(0, 0,0.9);
+}
+
+.card::before,
+.card::after{
+    content: "";
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(63, 57, 57);
+    z-index: -1;
+    top: 0;
+    left: 0;
+border-radius: 4px;
+
+
+}
+.card:hover::before{
+    transform: rotate(10deg);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+
+}
+.card:hover::after{
+    transform: rotate(20deg);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+
+}
+.img-box{
+    position: absolute;
+    background-color: rgb(7, 41, 70);
+    top: 4px;
+    left: 4px;
+    bottom: 4px;
+    right: 4px;
+    transition: 0.5s;
+}
+img{
+     position: absolute;
+     top: 0;
+     left: 0;
+     
+}
+.card:hover.img-box{
+    bottom: 8dvb;
+}
+
+
+
+
+
+
+
+.box{width: 100px;
+        height: 100px;
+        background-color: red;
+        animation-name: Box-table;
+        animation-duration: 10s;
+        position: relative;
+        top: 30px;
+       
+        right: 30px;
+        
+        }
+        @keyframes Box-table {
+            from{
+                background-color: rgb(102, 255, 0);
+                top: 30px;
+              
+                right: 20px;
+
+            }
+            to{
+                top: 300px;
+                 right: 300px;
+                background-color: yellow;
+            }
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+        .box1{width: 100px;
+        height: 100px;
+        background-color: rgb(22, 209, 223);
+        animation-name: Box1-box;
+        animation-duration: 8s;
+        
+        }
+        @keyframes Box1-box{
+           55%{background-color:rgb(7, 7, 7);}
+           50%{background-color: green;}
+           75%{background-color: blueviolet;}
+           40%{background-color: rgb(240, 21, 211);}
+        }
+
+
+</style>
+
+</head>
+<body>
+    
+    <div class="card">
+        <div class="img-box">
+            <img src="https://picsum.photos/295/295" alt="">
+        </div>
+        <div class="details">
+            <h2>This is new picture</h2>
+        </div>
+    </div>
+    
+</body>
+</html>
